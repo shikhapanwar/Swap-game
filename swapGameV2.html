@@ -1,0 +1,38 @@
+<!Doctype HTML>
+<html>
+<head>
+	<title>Swap game</title>
+	<script src="jquery-1.12.4.js"></script>
+	<link rel="stylesheet" type="text/css" href="swapGameV2.css">
+	<script src="swapGameV2.js"></script>
+</head>
+
+<body>
+<h1>Swap Game</h1>
+<h2>Goal- Arrange the block rowise in order</h2>
+<h3>Choose 2 elements and SWAP</h3>
+	<div id="puzzle">
+		<div class="row" id="r1">
+			<div class="col-3 c1 element" id="one" onclick="$(this).toggle_class()">1</div>
+			<div class="col-3 c2 element" onclick="$(this).toggle_class()">2</div>
+			<div class="col-3 c3 element" onclick="$(this).toggle_class()">3</div>
+		</div><br>
+		<div class="row" id="r2">
+			<div class="col-3 c1 element" onclick="$(this).toggle_class()">4</div>
+			<div class="col-3 c2 element" onclick="$(this).toggle_class()">5</div>
+			<div class="col-3 c3 element" onclick="$(this).toggle_class()">6</div>
+		</div><br>
+		<div class="row" id="r3">
+			<div class="col-3 c1 element" onclick="$(this).toggle_class()">7</div>
+			<div class="col-3 c2 element" onclick="$(this).toggle_class()">8</div>
+			<div class="col-3 c3 element" onclick="$(this).toggle_class()">9</div>
+		</div>
+	</div>
+
+	<div id="btn">
+	<img src="temp.jpg" id="img1" onclick="$('.focussed').swp()" ><br>
+	<img src="randomize.png" id="img2" onclick="$('#puzzle').randomize()">
+	</div>
+</body>
+
+</html>

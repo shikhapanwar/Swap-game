@@ -1,0 +1,113 @@
+* {
+box-sizing: border-box;
+}
+
+body{background:url('background.jpg');
+  /*  background-size: contain;*/
+}
+
+#puzzle{position: relative;
+    height:450px;
+    width:50%;
+    border-radius: 5px;
+    left:15%;
+    top:90px;
+    padding:15px 2%;
+}
+
+.col-3 {
+    float:left;
+    border: 1px solid black;
+    width:31.23%;
+    height:120px;
+    padding: 3px;
+    margin:10px 1%;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 7%;
+    font-weight: bold;
+    -ms-transform: left 3s; /* IE 9 */
+    -webkit-transition: left 3s; /* Safari */
+    transition: left 3s;
+    }
+
+#puzzle{background-color:black;
+    background-repeat: none;
+border: 2px solid black;
+}
+
+#puzzle:hover{
+    cursor: pointer;
+}
+
+.row{
+    clear:both;
+}
+
+.c1{
+    left:0;
+    
+}
+
+.c2{
+    left:33.33%;
+    
+}
+.c3{
+    left:66.67%;
+
+}
+
+
+#r1 div   {
+    top:0px;
+}
+#r2 div{
+    top:33.33%;
+}
+#r3 div{
+    top:66.67%;
+}
+
+.focussed{ 
+    box-shadow: 0 12px 24px 0 rgba(255, 0, 0, 0.5), 0 24px 80px 0 rgba(0, 0, 0, 0.45);
+    -ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Safari */
+    transform: scale(1.2,1.2);
+}
+
+
+#btn{background-color: black;
+    position: absolute;
+    left:67%;
+    top:350px;
+    width:150px;
+    height:285px;
+    outline: 2px solid red;
+    outline-offset: -15px;
+}
+
+#img1{position: absolute;
+    width:90px;
+    left:31px;
+    top:30px;
+}
+
+#img2{position: absolute;
+    top:150px;
+     width:100px;
+     left:25px;
+   
+}
+
+#btn img:hover{
+cursor:pointer;
+opacity:0.5;
+}
+
+h1, h2, h3
+{
+    color:red;
+    background-color: black;
+    text-align: center;
+}
